@@ -1,5 +1,12 @@
 {
-   "date": "11-29-2021",
-   "milliseconds_since_epoch": 1638178492390,
-   "time": "09:34:52 AM"
+    "Guitars": {
+    "Guitar": [
+        { "Brand": "Gibson", "Model": "Les Paul" },
+        { "Brand": "Fender", "Model": "Stratocaster" },
+        { "Brand": "Charvel", "Model": "Guthrie Govan" },
+        { "Brand": "Ibanez", "Model": "AZ224F" },
+        { "Brand": "Tyler", "Model": "Burning Water" }
+        ]
+    }
 }
+   
