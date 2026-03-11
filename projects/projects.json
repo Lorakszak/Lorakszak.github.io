@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Project One",
+        "description": "A placeholder project description 1.",
+        "tags": ["Python", "LLMs", "FastAPI"],
+        "github": "#",
+        "demo": null
+    },
+    {
+        "name": "Project Two",
+        "description": "A placeholder project description 2.",
+        "tags": ["TypeScript", "React", "OpenAI"],
+        "github": "#",
+        "demo": "#"
+    },
+    {
+        "name": "Project Three",
+        "description": "A placeholder project description 3.",
+        "tags": ["Python", "PyTorch", "Transformers"],
+        "github": "#",
+        "demo": null
+    },
+    {
+        "name": "Project Four",
+        "description": "A placeholder project description 4.",
+        "tags": ["Python", "PyTorch", "Transformers"],
+        "github": "#",
+        "demo": null
+    }
+]

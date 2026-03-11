@@ -1,9 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karol Roszak | Generative AI Engineer</title>
+    <meta name="description" content="Personal website of Karol Roszak (Lorakszak) - Generative AI Engineer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/theme.js"></script>
+</head>
 <body>
-<h1>Hello There!</h1>
-  <p> The website is currently in desighn phase, thanks for your patiance!</p>
-  <p> Have a look at my social acounts like e.g. \n-YouTube: <a href="https://www.youtube.com/@lorakszak">YouTube</a> \n-Twitter: <a href="https://twitter.com/Lorakszak">Twitter</a> </p> 
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Karol Roszak</h1>
+            <p class="subtitle">Lorakszak</p>
+            <p class="tagline">Generative AI Engineer</p>
+            <p class="bio">
+                Welcome to my corner of the internet. I build things with Generative AI and share insights 
+                I learn along the way. Explore my blog for thoughts and tutorials on AI,
+                engineering, and technology - or check out my projects to see what I've been working on.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Latest Posts</h2>
+            <div id="latest-posts" class="card-grid">
+                <p class="loading">Loading posts...</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var container = document.getElementById('latest-posts');
+            if (container) loadLatestPosts(container, 3);
+        });
+    </script>
 </body>
 </html>
