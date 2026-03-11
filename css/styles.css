@@ -85,6 +85,16 @@ img {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .site-logo span {
@@ -153,6 +163,15 @@ main {
 .hero {
     text-align: center;
     padding: 4rem 0 3rem;
+}
+
+.hero-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 3px solid var(--accent);
 }
 
 .hero h1 {

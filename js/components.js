@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const headerHTML = '<header class="site-header">' +
         '<div class="header-inner">' +
-        '<a href="index.html" class="site-logo">Karol <span>Roszak</span></a>' +
+        '<a href="index.html" class="site-logo"><img src="assets/images/profile_photo.jpg" alt="" class="nav-avatar">Karol <span>Roszak</span></a>' +
         '<button class="hamburger" aria-label="Menu">&#9776;</button>' +
         '<ul class="nav-links">' +
         navLink('index.html', 'Home') +
