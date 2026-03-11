@@ -7,23 +7,19 @@
         return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
     }
 
-    function apply(theme) {
+    // Exposed globally so components.js can call it after injecting the button
+    window.applyTheme = function (theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem(STORAGE_KEY, theme);
-        const btn = document.querySelector('.theme-toggle');
+        var btn = document.querySelector('.theme-toggle');
         if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
-    }
+    };
 
-    // Apply immediately to prevent flash
-    apply(getPreferred());
+    window.toggleTheme = function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        window.applyTheme(current === 'dark' ? 'light' : 'dark');
+    };
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const btn = document.querySelector('.theme-toggle');
-        if (btn) {
-            btn.addEventListener('click', function () {
-                const current = document.documentElement.getAttribute('data-theme');
-                apply(current === 'dark' ? 'light' : 'dark');
-            });
-        }
-    });
+    // Apply immediately to prevent flash (button doesn't exist yet, that's OK)
+    window.applyTheme(getPreferred());
 })();

@@ -29,10 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('header-placeholder').innerHTML = headerHTML;
     document.getElementById('footer-placeholder').innerHTML = footerHTML;
 
-    // Re-apply theme button state
-    const theme = document.documentElement.getAttribute('data-theme') || 'dark';
-    const btn = document.querySelector('.theme-toggle');
-    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    // Now that the button exists, update its icon and attach the click handler
+    var theme = document.documentElement.getAttribute('data-theme') || 'dark';
+    var btn = document.querySelector('.theme-toggle');
+    if (btn) {
+        btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+        btn.addEventListener('click', function () {
+            window.toggleTheme();
+        });
+    }
 
     // Hamburger toggle
     const hamburger = document.querySelector('.hamburger');
