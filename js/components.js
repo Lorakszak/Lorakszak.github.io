@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const footerHTML = '<footer class="site-footer">' +
         '<p>&copy; ' + new Date().getFullYear() + ' Karol Roszak &middot; ' +
-        '<a href="https://linktr.ee/lorakszak" target="_blank" rel="noopener">Linktree</a></p>' +
+        '<a href="/contact.html">Contact</a></p>' +
         '</footer>';
 
     // Inject
