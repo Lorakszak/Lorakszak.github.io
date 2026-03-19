@@ -33,6 +33,17 @@ Personal website of Karol Roszak (Lorakszak). At least until I decide to move to
 
 Set `"demo"` to a URL string or `null` if there is no live demo. No HTML editing needed.
 
+## GitHub Pages Limitations
+
+- **Static only** — no server-side code, databases, or persistent file uploads; use third-party services (Formspree, Firebase, Auth0) for dynamic functionality
+- **Repo size**: 1 GB max
+- **Published site size**: 1 GB max
+- **Monthly bandwidth**: 100 GB soft limit
+- **Max file size**: 100 MB
+- **One personal site** per GitHub account (`username.github.io`); project sites are separate repos
+- **HTTPS enforced** — mixed HTTP/HTTPS content will be blocked by browsers
+- **No native custom build pipelines** — Jekyll runs automatically if a `_config.yml` is present; other static site generators require a GitHub Actions workflow
+
 ## Local Development
 
 To quickly test run:
