@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(function (posts) {
             var meta = posts.find(function (p) { return p.slug === slug; });
             if (meta) {
-                document.title = meta.title + ' | Karol Roszak';
+                document.title = 'Karol Roszak | Lorakszak';
                 var tagsHTML = (meta.tags || []).map(function (t) {
                     return '<span class="tag">' + t + '</span>';
                 }).join(' ');
